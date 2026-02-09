@@ -2,53 +2,135 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fútbol Global</title>
+    <title>Copa Mundial FIFA 2026 | El Sueño del Fútbol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header class="top-header">
-    <div class="logo">FIFA</div>
+    <div class="logo">MUNDIAL 2026</div>
     <nav class="menu">
-        <a href="#">Torneos</a>
-        <a href="#">Partidos</a>
-        <a href="#">Noticias</a>
-        <a href="#">Clasificaciones</a>
-        <a href="#">Juega</a>
+        <a href="#mundial">Inicio</a>
+        <a href="#selecciones">Selecciones</a>
+        <a href="#clubes">Clubes</a>
+        <a href="#videos">Videos</a>
     </nav>
 </header>
 
-<main>
-
-<section class="hero">
+<section class="hero" id="mundial">
     <div class="hero-texto">
-        <span class="categoria">Inside FIFA</span>
-        <h1>Costa Rica, primer país de la Concacaf que se une al proyecto FIFA Arena</h1>
-        <button>Ver más</button>
+        <span class="categoria">COPA MUNDIAL FIFA 2026</span>
+        <h1>USA · CANADÁ · MÉXICO</h1>
+        <p class="fecha">Junio 15 - Julio 13, 2026</p>
+        <p>
+            La primera Copa Mundial con 48 selecciones. Un torneo histórico que unirá a tres naciones anfitrionas.
+        </p>
+        <button class="btn-hero">Ver Más Información</button>
     </div>
 
     <div class="hero-imagen">
-        <p>Imagen destacada</p>
+       <img src="https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg"
+         alt="Estadio de fútbol del Mundial">
     </div>
 </section>
 
-<section class="contenido">
-    <article>
-        <h2>Noticias del Fútbol Mundial</h2>
-        <p>La FIFA impulsa el desarrollo del fútbol a nivel global, promoviendo la inclusión y el juego limpio.</p>
-    </article>
+<section class="seccion" id="selecciones">
+    <h2>Mundial 2026</h2>
+    <p class="subtitulo">El torneo más grande de la historia</p>
 
-    <article>
-        <h2>Competiciones Internacionales</h2>
-        <p>Torneos de selecciones y clubes reúnen a los mejores jugadores del mundo.</p>
-    </article>
+    <div class="cards">
+        <article class="card">
+            <div class="card-header">
+                <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=600&h=400&fit=crop"
+                     alt="Trofeo Copa Mundial">
+            </div>
+            <div class="card-contenido">
+                <h3>El Trofeo</h3>
+                <p>La Copa del Mundo, el premio más codiciado del fútbol internacional.</p>
+                <a href="#" class="enlace-card">Saber más →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-header">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop"
+                     alt="Estadio Mundial">
+            </div>
+            <div class="card-contenido">
+                <h3>3 Países</h3>
+                <p>Estados Unidos, Canadá y México serán sedes conjuntas del torneo.</p>
+                <a href="#" class="enlace-card">Ver sedes →</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-header">
+                <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop"
+                     alt="Afición Mundial">
+            </div>
+            <div class="card-contenido">
+                <h3>48 Equipos</h3>
+                <p>Nuevo formato con más selecciones y 80 partidos en total.</p>
+                <a href="#" class="enlace-card">Ver formato →</a>
+            </div>
+        </article>
+    </div>
 </section>
 
-</main>
+<section class="seccion gris" id="clubes">
+    <h2>Clubes y Selecciones</h2>
+    <p class="subtitulo">Del club al Mundial</p>
+
+    <div class="cards-destacadas">
+        <article class="card-destacada">
+            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&h=500&fit=crop"
+                 alt="Balón de fútbol">
+            <div class="card-info">
+                <h3>Formación en Clubes</h3>
+                <p>Los clubes son la cantera donde se forjan los futuros campeones mundiales.</p>
+            </div>
+        </article>
+
+        <article class="card-destacada">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=500&fit=crop"
+                 alt="Jugador de fútbol">
+            <div class="card-info">
+                <h3>Jugadores Estrella</h3>
+                <p>Las figuras del fútbol mundial buscan la gloria con su selección nacional.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="seccion" id="videos">
+    <h2> Videos del Mundial</h2>
+    <p class="subtitulo">Revive los mejores momentos</p>
+
+    <div class="videos">
+        <div class="video-item">
+            <iframe src="" 
+                    title="FIFA World Cup"
+                    allowfullscreen></iframe>
+            <p class="video-titulo">Resumen Mundial 2022</p>
+        </div>
+
+        <div class="video-item">
+            <iframe src=""
+                    title="World Cup Best Goals"
+                    allowfullscreen></iframe>
+            <p class="video-titulo">Mejores Goles Históricos</p>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>© 2026 Fútbol Global | Proyecto académico</p>
+    <div class="footer-contenido">
+        <div class="logo-footer">MUNDIAL 2026</div>
+        <p>© 2026 Copa Mundial FIFA | Proyecto académico</p>
+        <p class="footer-info">Sitio web dedicado a la próxima Copa Mundial de la FIFA</p>
+    </div>
 </footer>
 
 </body>
