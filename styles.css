@@ -4,6 +4,7 @@ body {
     background-color: #0a1a2a;
     color: #e0e0e0;
 }
+
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -130,6 +131,7 @@ body {
 .gris {
     background-color: #0f2235;
 }
+
 .cards {
     display: flex;
     justify-content: center;
@@ -183,6 +185,99 @@ body {
 .enlace-card:hover {
     text-decoration: underline;
 }
+
+/* Calendario */
+.calendario-fases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.fase-card {
+    background: #001529;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #003a6d;
+}
+
+.fase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.3);
+}
+
+.fase-card.destacada {
+    border: 2px solid #00a8ff;
+    box-shadow: 0 5px 20px rgba(0, 168, 255, 0.3);
+}
+
+.fase-header {
+    background: linear-gradient(135deg, #0056b3 0%, #003a6d 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.fase-header h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.fecha-fase {
+    font-size: 0.9rem;
+    color: #00a8ff;
+    font-weight: 600;
+}
+
+.fase-contenido {
+    padding: 1.5rem;
+}
+
+.partido {
+    background: #0f2235;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #00a8ff;
+    transition: background 0.3s;
+}
+
+.partido:hover {
+    background: #142b42;
+}
+
+.partido:last-child {
+    margin-bottom: 0;
+}
+
+.partido-fecha {
+    font-weight: 600;
+    color: #00a8ff;
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.partido-equipos {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #ffffff;
+}
+
+.partido-lugar {
+    color: #b0b0b0;
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.partido.final {
+    background: linear-gradient(135deg, rgba(0, 168, 255, 0.15) 0%, rgba(0, 86, 179, 0.15) 100%);
+    border-left-width: 5px;
+}
+
 .cards-destacadas {
     display: flex;
     justify-content: center;
@@ -209,97 +304,5 @@ body {
 
 .card-info {
     padding: 20px;
-    flex-grow: 1;
-}
-
-.card-info h3 {
-    color: #ffffff;
-    margin-top: 0;
-}
-
-.card-info p {
-    color: #b0b0b0;
-}
-.videos {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.video-item {
-    width: 420px;
-}
-
-.video-item iframe {
-    width: 100%;
-    height: 235px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.video-titulo {
-    text-align: center;
-    color: #b0b0b0;
-    margin-top: 10px;
-    font-weight: bold;
-}
-footer {
-    background: #001529;
-    color: white;
-    padding: 30px 40px;
-    border-top: 3px solid #0056b3;
-}
-
-.footer-contenido {
-    text-align: center;
-}
-
-.logo-footer {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00a8ff;
-    margin-bottom: 10px;
-}
-
-.footer-info {
-    color: #b0b0b0;
-    font-size: 14px;
-    margin-top: 10px;
-}
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-    
-    .hero-texto {
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-    
-    .cards, .cards-destacadas, .videos {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card, .card-destacada, .video-item {
-        width: 100%;
-        max-width: 400px;
-        margin-bottom: 20px;
-    }
-    
-    .top-header {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-    
-    .menu {
-        margin-top: 15px;
-    }
-    
-    .menu a {
-        margin: 0 10px;
-    }
+    flex: 1;
 }
